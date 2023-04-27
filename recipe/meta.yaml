@@ -1,5 +1,5 @@
 {% set name = "foundry-dev-tools" %}
-{% set version = "1.0.8" %}
+{% set version = "1.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/foundry-dev-tools-{{ version }}.tar.gz
-  sha256: 6256cd3b9082c11e78fb32824430f335bbb4287de46f28ce210f1f1ade77b578
+  sha256: 98a91034e59159bafb861bd84d2e3df1ae8c209b2f37d635a2bc5fa5d0253f34
 
 build:
   noarch: python
