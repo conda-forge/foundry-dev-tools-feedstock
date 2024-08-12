@@ -27,9 +27,9 @@ requirements:
     - requests
     - palantir-oauth-client
     - platformdirs
-    - tomli  # [py<311]
-    - typing_extensions  # [py<311]
-    - backports-datetime-fromisoformat ==2.0.1  # [py<311]
+    - tomli
+    - typing_extensions
+    - backports-datetime-fromisoformat ==2.0.1
     - click
     - inquirer
     - websockets
