@@ -10,7 +10,7 @@ source:
   sha256: 68d97251f0d14f11499b5cfb90142cd3469f0dfa297a489ce8de241c12c498c7
 
 build:
-  skip: true  # [py<310]
+  noarch: python
   entry_points:
     - fdt = foundry_dev_tools.cli.main:cli
     - git-credential-foundry = foundry_dev_tools.cli.git_credential_foundry:_helper
