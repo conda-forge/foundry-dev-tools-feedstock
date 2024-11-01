@@ -35,6 +35,8 @@ requirements:
     - rich
     - packaging
     - tomli-w
+    # used by dependency of inquirer
+    - distutils
 
 test:
   imports:
