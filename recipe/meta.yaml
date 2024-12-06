@@ -1,13 +1,13 @@
 {% set name = "foundry-dev-tools" %}
-{% set version = "2.1.11" %}
+{% set version = "2.1.12" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/foundry_dev_tools-{{ version }}.tar.gz
-  sha256: cc450c0f8453b33b76880d0b8aa3653b1a980f307c36338caf5e88e93b95659e
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/foundry_dev_tools-{{ version }}.tar.gz
+  sha256: d6e3855fd4b7d1c763ede815c6433dc2983f1bb7f3f96cfb5a02a0422d440cc4
 
 build:
   noarch: python
