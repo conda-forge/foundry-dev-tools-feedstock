@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "foundry-dev-tools" %}
 {% set version = "2.1.14" %}
 
@@ -15,15 +16,15 @@ build:
     - fdt = foundry_dev_tools.cli.main:cli
     - git-credential-foundry = foundry_dev_tools.cli.git_credential_foundry:_helper
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10,<=3.13
+    - python {{ python_min }}
     - pdm-backend
     - pip
   run:
-    - python >=3.10,<=3.13
+    - python >={{ python_min }},<3.14a0
     - requests
     - palantir-oauth-client
     - platformdirs
@@ -44,6 +45,7 @@ test:
     - fdt --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/emdgroup/foundry-dev-tools
