@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "foundry-dev-tools" %}
-{% set version = "2.1.14" %}
+{% set version = "2.1.15" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/foundry_dev_tools-{{ version }}.tar.gz
-  sha256: cdc160d174b45eca72805908163dd9159b166c8dd29151c57a4779929babc187
+  sha256: 378d3f55894c91d1a6035e82dbcc80ad47add601bf507b48caf7813397d3d4bd
 
 build:
   noarch: python
@@ -16,7 +16,7 @@ build:
     - fdt = foundry_dev_tools.cli.main:cli
     - git-credential-foundry = foundry_dev_tools.cli.git_credential_foundry:_helper
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
