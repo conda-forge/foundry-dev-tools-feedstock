@@ -1,14 +1,14 @@
 {% set python_min = "3.10" %}
 {% set name = "foundry-dev-tools" %}
-{% set version = "2.1.25" %}
+{% set version = "2.1.26" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/foundry_dev_tools-{{ version }}.tar.gz
-  sha256: 937dbf0b6512ad4d6bdfd8ca46c9a45399b0c51bf128cd07c0eff95bacd3af04
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/foundry_dev_tools-{{ version }}.tar.gz
+  sha256: 350e5de19d311b4adb925d61457980cb8a6ec4d06f1b9b2ea656dc67bbb57e06
 
 build:
   noarch: python
